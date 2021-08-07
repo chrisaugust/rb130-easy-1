@@ -35,7 +35,6 @@
 require 'set'
 
 def any?(array)
-  return false if array.size == 0
   array.each { |elem| return true if yield(elem) }
   false
 end
